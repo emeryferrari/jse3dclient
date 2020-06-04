@@ -46,7 +46,7 @@ public class JSE3DClient {
 				System.out.println("Connected!");
 				PrintWriter writer = new PrintWriter(socket.getOutputStream());
 				writer.println(username);
-				writer.println(JSE3DClientConst.VERSION);
+				writer.println(JSE3DClientConst.API_VERSION);
 				writer.flush();
 				ObjectInputStream ois = new ObjectInputStream(socket.getInputStream());
 				Object object = ois.readObject();
