@@ -7,7 +7,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
 import com.emeryferrari.jse3d.network.*;
-public class JSE3DClient {
+public class JSE3DNetworkHandler {
 	ArrayList<User> locations = new ArrayList<User>();
 	Display display;
 	InetAddress address;
@@ -15,7 +15,7 @@ public class JSE3DClient {
 	String username;
 	Socket socket;
 	private boolean stop = false;
-	private static final JSE3DClient CLASS_OBJ = new JSE3DClient();
+	private static final JSE3DNetworkHandler CLASS_OBJ = new JSE3DNetworkHandler();
 	public static void main(String[] args) {
 		for (int i = 0; i < 1000; i++) {
 			CLASS_OBJ.locations.add(null);
